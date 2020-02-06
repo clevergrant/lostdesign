@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg viewBox="120.055 86.526 260.074 326.59" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+	<defs>
+		<bx:grid x="120.055" y="86.526" width="260.074" height="326.59" />
+	</defs>
+	<path class="logo-color" d="M 790.4 423.2 m -129.003 0 a 129.003 129.003 0 1 0 258.006 0 a 129.003 129.003 0 1 0 -258.006 0 Z M 790.4 423.2 m -64.501 0 a 64.501 64.501 0 0 1 129.002 0 a 64.501 64.501 0 0 1 -129.002 0 Z" style="" transform="matrix(1, 0.000079, -0.000079, 1, -540.366392, -139.864531)" bx:shape="ring 790.4 423.2 64.501 64.501 129.003 129.003 1@68f4b763" />
+	<rect class="logo-color" x="120.987" y="87.5" width="64.643" height="325" rx="32.3" ry="32.3" />
+	<rect class="logo-color" x="314.37" y="87.5" width="64.643" height="325" rx="32.3" ry="32.3" />
+	<circle class="logo-color" cx="250" cy="283.379" r="37.204" />
+</svg>
