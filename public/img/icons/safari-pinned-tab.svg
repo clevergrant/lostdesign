@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.0" width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <g style="" transform="matrix(0.049087, 0, 0, 0.049087, 7.711784, 7.811779)">
-    <path class="logo-color" d="M 790.4 423.2 m -129.003 0 a 129.003 129.003 0 1 0 258.006 0 a 129.003 129.003 0 1 0 -258.006 0 Z M 790.4 423.2 m -64.501 0 a 64.501 64.501 0 0 1 129.002 0 a 64.501 64.501 0 0 1 -129.002 0 Z" style="" transform="matrix(1, 0.000079, -0.000079, 1, -784.588437, -385.554381)" bx:shape="ring 790.4 423.2 64.501 64.501 129.003 129.003 1@68f4b763"/>
-    <rect class="logo-color" x="-123.235" y="-158.19" width="64.643" height="325" rx="32.3" ry="32.3"/>
-    <rect class="logo-color" x="70.148" y="-158.19" width="64.643" height="325" rx="32.3" ry="32.3"/>
-    <circle class="logo-color" cx="5.778" cy="37.689" r="37.204"/>
-  </g>
-</svg>
