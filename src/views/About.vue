@@ -330,4 +330,40 @@ li {
     padding: 15px;
   }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .about-content {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  .job-header,
+  .job,
+  .project {
+    margin-bottom: 1rem;
+  }
+
+  .resume-section {
+    margin-bottom: 1.5rem;
+  }
+}
 </style>

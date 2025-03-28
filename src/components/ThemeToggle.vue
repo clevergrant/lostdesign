@@ -117,4 +117,20 @@ export default defineComponent({
   background-color: var(--secondary);
   color: var(--primary);
 }
+
+@media screen and (max-width: 768px) {
+  .theme-toggle {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
 </style>

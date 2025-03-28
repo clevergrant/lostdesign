@@ -156,6 +156,7 @@ h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease,
     background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .dark-theme .portfolio-item {
@@ -175,6 +176,7 @@ h2 {
 .portfolio-content {
   padding: 25px;
   width: 70%;
+  box-sizing: border-box;
 }
 
 .portfolio-content p {
@@ -264,6 +266,49 @@ h2 {
   .portfolio-content {
     width: 100%;
     padding: 15px;
+  }
+
+  .portfolio-item {
+    padding: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .portfolio-item {
+    margin-bottom: 20px;
+    padding: 0 0 10px 0;
+  }
+
+  .portfolio-content {
+    padding: 15px;
+  }
+
+  .portfolio-image {
+    height: 120px;
+    padding: 15px;
+  }
+
+  .tags {
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .visit-link,
+  .github-link {
+    width: 100%;
+    text-align: center;
   }
 }
 </style>

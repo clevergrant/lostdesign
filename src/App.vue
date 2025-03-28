@@ -145,6 +145,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 #app > div {
@@ -224,5 +225,49 @@ nav a::after {
 nav a:hover::after,
 nav a.router-link-active::after {
   width: 100%;
+}
+
+/* Media Queries for responsive design */
+@media screen and (max-width: 768px) {
+  #app {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #logo-space {
+    flex: initial !important;
+    padding: 20px 0;
+  }
+
+  #logo {
+    height: 150px;
+  }
+
+  #main {
+    flex: initial !important;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    height: 120px;
+  }
+
+  #logo-space > h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  #main {
+    padding: 15px;
+  }
 }
 </style>

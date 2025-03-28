@@ -72,4 +72,33 @@ p {
 .btn.secondary:hover {
   background-color: #d6b98c;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  #home {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 </style>
