@@ -1,12 +1,6 @@
 [build]
-  publish = "dist"
-  command = "yarn build"
+  publish = ".output/public"
+  command = "npm run build"
 
 [build.environment]
-  NODE_VERSION = "18"
-
-# Handle SPA routing for Vue Router
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200 
+  NODE_VERSION = "22"

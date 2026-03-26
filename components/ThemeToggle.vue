@@ -44,49 +44,36 @@
   </button>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, onMounted } from "vue";
+<script setup lang="ts">
+const isDarkMode = ref(false);
 
-export default defineComponent({
-  name: "ThemeToggle",
-  setup() {
-    const isDarkMode = ref(false);
-
-    // Check for saved theme preference or prefers-color-scheme
-    onMounted(() => {
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme === "dark") {
-        isDarkMode.value = true;
-        document.documentElement.classList.add("dark-theme");
-      } else if (savedTheme === "light") {
-        isDarkMode.value = false;
-      } else if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      ) {
-        isDarkMode.value = true;
-        document.documentElement.classList.add("dark-theme");
-      }
-    });
-
-    const toggleTheme = () => {
-      isDarkMode.value = !isDarkMode.value;
-
-      if (isDarkMode.value) {
-        document.documentElement.classList.add("dark-theme");
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.documentElement.classList.remove("dark-theme");
-        localStorage.setItem("theme", "light");
-      }
-    };
-
-    return {
-      isDarkMode,
-      toggleTheme,
-    };
-  },
+onMounted(() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    isDarkMode.value = true;
+    document.documentElement.classList.add("dark-theme");
+  } else if (savedTheme === "light") {
+    isDarkMode.value = false;
+  } else if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    isDarkMode.value = true;
+    document.documentElement.classList.add("dark-theme");
+  }
 });
+
+const toggleTheme = () => {
+  isDarkMode.value = !isDarkMode.value;
+
+  if (isDarkMode.value) {
+    document.documentElement.classList.add("dark-theme");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.classList.remove("dark-theme");
+    localStorage.setItem("theme", "light");
+  }
+};
 </script>
 
 <style>

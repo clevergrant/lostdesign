@@ -3,19 +3,19 @@
     <h1>Welcome to Lost Design</h1>
     <p>Creative web development & design solutions</p>
     <div class="cta-buttons">
-      <router-link to="/portfolio" class="btn primary"
-        >View Portfolio</router-link
-      >
-      <router-link to="/about" class="btn secondary">About Me</router-link>
+      <NuxtLink to="/portfolio" class="btn primary">View Portfolio</NuxtLink>
+      <NuxtLink to="/about" class="btn secondary">About Me</NuxtLink>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+useHead({ title: "Home" });
 
-export default defineComponent({
-  name: "HomePage",
+useSeoMeta({
+  description: "Lost Design - Creative web development & design solutions by Grant Perdue",
+  ogTitle: "Lost Design - Home",
+  ogDescription: "Creative web development & design solutions by Grant Perdue",
 });
 </script>
 
@@ -73,7 +73,6 @@ p {
   background-color: #d6b98c;
 }
 
-/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   #home {
     padding-top: 30px;

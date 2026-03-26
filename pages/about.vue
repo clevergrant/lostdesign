@@ -212,11 +212,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+useHead({ title: "About" });
 
-export default defineComponent({
-  name: "AboutView",
+useSeoMeta({
+  description:
+    "Grant Perdue - Full-Stack Developer with 9+ years of experience. React, TypeScript, Vue.js, Node.js specialist.",
+  ogTitle: "About - Lost Design",
+  ogDescription:
+    "Grant Perdue - Full-Stack Developer with 9+ years of experience delivering robust web applications.",
 });
 </script>
 
@@ -235,7 +239,7 @@ h1 {
 }
 
 .dark-theme h1 {
-  color: #a7c1e0; /* Lighter color for headers in dark mode */
+  color: #a7c1e0;
 }
 
 h2 {
@@ -247,7 +251,7 @@ h2 {
 }
 
 .dark-theme h2 {
-  color: #a7c1e0; /* Lighter color for headers in dark mode */
+  color: #a7c1e0;
 }
 
 h3 {
@@ -257,7 +261,7 @@ h3 {
 }
 
 .dark-theme h3 {
-  color: #e6c89c; /* Keep the "about me" text dark in dark mode */
+  color: #e6c89c;
 }
 
 .subtitle {

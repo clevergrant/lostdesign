@@ -102,11 +102,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+useHead({ title: "Portfolio" });
 
-export default defineComponent({
-  name: "PortfolioView",
+useSeoMeta({
+  description:
+    "Portfolio of Grant Perdue - Fire Emblem Codebreaker, Skyrim Alchemy, and more web development projects.",
+  ogTitle: "Portfolio - Lost Design",
+  ogDescription:
+    "Portfolio of Grant Perdue - Creative web development projects and open-source contributions.",
 });
 </script>
 
@@ -124,7 +128,7 @@ h1 {
 }
 
 .dark-theme h1 {
-  color: #a7c1e0; /* Lighter color for headers in dark mode */
+  color: #a7c1e0;
 }
 
 h2 {
@@ -134,7 +138,7 @@ h2 {
 }
 
 .dark-theme h2 {
-  color: #a7c1e0; /* Lighter color for headers in dark mode */
+  color: #a7c1e0;
 }
 
 .subtitle {
