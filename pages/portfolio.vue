@@ -80,6 +80,37 @@
       </div>
 
       <div class="portfolio-item">
+        <div class="portfolio-layout">
+          <img
+            src="/img/particle-song-screenshot.png"
+            alt="Particle Song Screenshot"
+            class="portfolio-image"
+          />
+          <div class="portfolio-content">
+            <h2>Particle Song</h2>
+            <p>
+              A generative audiovisual playground where colorful particles
+              dance to procedurally generated music. Tweak the key, BPM, bars,
+              and cycles to shape your own soundscape.
+            </p>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web Audio</span>
+              <span class="tag">Canvas</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://particlesong.lostdesign.dev/"
+                target="_blank"
+                class="visit-link"
+                >Visit Site</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
         <div class="portfolio-content">
           <h2>GitHub Projects</h2>
           <p>
